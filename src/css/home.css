@@ -71,3 +71,31 @@ a {
   background-color: black;
 }
 
+
+.buttonPage {
+  color: white;
+  background-color: black;
+  border: black 2px solid;
+  margin: 0 auto;
+  width: 30%;
+  display: inline;
+}
+
+.buttonAPage {
+  text-decoration: none;
+}
+
+.buttonPage:hover {
+  color: lightblue;
+  background-color: black;
+}
+
+.carousel {
+  width: 400px;
+  height: 100%;
+}
+
+.carousel-item {
+  width: 400px;
+  height: 100%;
+}
