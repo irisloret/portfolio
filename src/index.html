@@ -33,32 +33,35 @@
 <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon-chevron-up"></i></button>
 
-<section>
-  <nav class="navbar navbar-expand-lg bg-light nav-background">
-    <div class="container-fluid d-flex ms-4">
-      <a class="navbar-brand fw-bolder" href="index.html">Portfolio - Iris Loret</a>
-      <button class="navbar-toggler text-black bg-white" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end me-4" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          <a class="nav-link" href="projects.html">Projects</a>
-          <a class="nav-link" href="about_me.html">About Me</a>
-        </div>
+<!--<section>-->
+<nav class="navbar navbar-expand-lg bg-light  sticky-top">
+  <div class="container-fluid d-flex ms-4">
+    <a class="navbar-brand fw-bolder" href="index.html">Portfolio - Iris Loret</a>
+    <button class="navbar-toggler text-black bg-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end me-4" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="about_me.html">About Me</a>
       </div>
     </div>
-  </nav>
-</section>
+  </div>
+</nav>
+<!--</section>-->
 <section>
   <div class="d-md-flex d-block">
     <div class="mt-5 ms-4 me-2">
       <h1>Welcome to my portfolio!</h1>
       <hr>
-      <p>Hello! My name is Iris Loret, I am an applied computer science student at Thomas More in Geel and on this page
-        you will find some projects I did and more information about me.</p>
+      <!--      <p>Hello! My name is Iris Loret, I am an applied computer science student at Thomas More in Geel and on this page-->
+      <!--        you will find some projects I did and more information about me.</p>-->
+      <p>My name is Iris Loret, I am currently a student of
+        Applied Computer Science at Thomas More in Geel, Belgium. On this page, I have showcased some of the projects I
+        have undertaken, along with other relevant information about me.</p>
     </div>
     <div class="me-4 ms-4 mb-4">
       <img src="images/973c68753cda563ba5be1c498aba1d6c.jpg" alt="motto" width="1200" class="img-fluid mt-5">
@@ -71,39 +74,40 @@
 <script src="../js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
 
+<div class="pt-5 mt-5">
+  <footer class="bg-light text-center text-white mt-4">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4 icons">
 
-<footer class="bg-light text-center text-white">
-  <!-- Grid container -->
-  <div class="container p-4 pb-0">
-    <!-- Section: Social media -->
-    <section class="mb-4 icons">
+        <!-- Linkedin -->
+        <a
+          class="btn btn-floating m-1"
+          style="background-color: #0082ca;"
+          href="https://www.linkedin.com/in/iris-loret-ab857a266/"
+          role="button"
+        ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-floating m-1"
+          style="background-color: #555555;"
+          href="https://github.com/irisloret"
+          role="button"
+        ><i class="fab fa-github"></i
+        ></a>
+      </section>
+    </div>
 
-      <!-- Linkedin -->
-      <a
-        class="btn btn-floating m-1"
-        style="background-color: #0082ca;"
-        href="https://www.linkedin.com/in/iris-loret-ab857a266/"
-        role="button"
-      ><i class="fab fa-linkedin-in"></i
-      ></a>
-      <!-- Github -->
-      <a
-        class="btn btn-floating m-1"
-        style="background-color: #555555;"
-        href="https://github.com/irisloret"
-        role="button"
-      ><i class="fab fa-github"></i
-      ></a>
-    </section>
-  </div>
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    ©
-    <script>document.write(new Date().getFullYear())</script>
-    Iris Loret
-  </div>
-</footer>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      ©
+      <script>document.write(new Date().getFullYear())</script>
+      Iris Loret
+    </div>
+  </footer>
+</div>
 </body>
 <script>// Get the button:
 let mybutton = document.getElementById("myBtn");
@@ -125,5 +129,19 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}</script>
+}
+
+var navbar = document.querySelector('.nav-background');
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 0) {
+    navbar.classList.add('nav-background-transparent');
+    // navbar.classList.add('nav-background-smaller');
+  } else {
+    navbar.classList.remove('nav-background-transparent');
+    // navbar.classList.remove('nav-background-smaller');
+  }
+});
+
+</script>
 </html>

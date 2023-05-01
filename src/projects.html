@@ -25,28 +25,28 @@
 <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon-chevron-up"></i></button>
 
-<section>
-  <nav class="navbar navbar-expand-lg bg-light nav-background">
-    <div class="container-fluid d-flex ms-4">
-      <a class="navbar-brand fw-bolder" href="index.html">My projects - Iris Loret</a>
-      <button class="navbar-toggler text-black bg-white" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end me-4" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
-          <a class="nav-link" href="about_me.html">About Me</a>
-        </div>
+<!--<section>-->
+<nav class="navbar navbar-expand-lg bg-light sticky-top">
+  <div class="container-fluid d-flex ms-4">
+    <a class="navbar-brand fw-bolder" href="index.html">My projects - Iris Loret</a>
+    <button class="navbar-toggler text-black bg-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end me-4" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+        <a class="nav-link" href="about_me.html">About Me</a>
       </div>
     </div>
-  </nav>
-</section>
+  </div>
+</nav>
+<!--</section>-->
 <section class="mb-4 mt-4">
-  <div class="d-flex flex-row">
-    <div class="card m-3 ms-5 me-5 col-5">
+  <div class="d-md-flex flex-row">
+    <div class="card m-3 ms-5 me-4 col-md-5">
       <div class="row g-0">
         <div class="col-md-12">
           <div class="card-body">
@@ -67,7 +67,7 @@
 
       </div>
     </div>
-    <div class="card m-3 col-5 ms-5 me-5">
+    <div class="card m-3 col-md-5 ms-5 me-4">
       <div class="row g-0">
         <div class="col-md-12">
           <div class="card-body">
@@ -89,18 +89,58 @@
       </div>
     </div>
   </div>
+  <div class="d-md-flex flex-row">
+    <div class="card m-3 col-md-5 ms-5 me-4">
+      <div class="row g-0">
+        <div class="col-md-12">
+          <div class="card-body">
+            <h4 class="card-title">PHP</h4>
+            <hr>
+            <p class="card-text">The PHP project was made in the second year. We made an application for a client.
+              The subject for this project was 'Staff Management System'.</p>
+            <p class="text-center">
+              <a href="#php" class="buttonAPage">
+                <button class="p-2 buttonPage w-75">More info about
+                  this
+                  project
+                </button>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card m-3 col-md-5 ms-5 me-4">
+      <div class="row g-0">
+        <div class="col-md-12">
+          <div class="card-body">
+            <h4 class="card-title">Data Visualisation</h4>
+            <hr>
+            <p class="card-text">This project was made in the second year. I had to build all sorts of visualisations
+              within the theme of football.</p>
+            <p class="text-center">
+              <a href="#datVis" class="buttonAPage">
+                <button class="p-2 buttonPage w-75">More info about
+                  this
+                  project
+                </button>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="mt-3 ms-4 me-2">
-    <hr>
+    <hr id="reqAna">
   </div>
 </section>
-<section class="bg-white" id="reqAna">
-  <hr>
-
+<section class="bg-white sect">
   <div class="me-4">
     <h2 class="mt-5 ms-4">Requirement Analysis</h2>
     <hr>
-    <div class="d-md-flex d-block">
-      <div class="ms-4 mt-5 me-2">
+    <div class="d-lg-flex d-block">
+      <div class="ms-4 mt-5 me-2 padding">
         <p>During the project week for the Requirement Analysis course, our team of six people did the analysis of the
           requirements our client provided. We started by reviewing the reports of the other students who had the same
           assignment during the semester. Then we had a short meeting with the client to ask questions. After that it
@@ -162,13 +202,12 @@
     </div>
   </div>
 </section>
-<section id="webAdv">
-  <hr>
+<section id="webAdv" class="sect">
 
   <div class="me-4">
     <h2 class="mt-5 ms-4">Webdesign Advanced</h2>
     <hr>
-    <div class="ms-3 mb-5 d-md-flex d-block">
+    <div class="ms-3 mb-5 d-lg-flex d-block">
       <div class="me-4">
         <img src="images/home.png" class="img-fluid mt-4"
              width="1901"
@@ -185,19 +224,132 @@
           designs for web pages.</p>
         <div>
           <a href="https://acespace.netlify.app/index.html" target="_blank" class="buttonAPage">
-            <button class="p-2 mt-4 buttonPage">View home page</button>
+            <button class="p-2 mt-4 buttonPage">View home <span class="d-block">page</span></button>
           </a>
           <a href="https://acespace.netlify.app/irispage1" target="_blank" class="buttonAPage">
-            <button class="p-2 mt-4 buttonPage">Solar System</button>
+            <button class="p-2 mt-4 buttonPage">Solar <span class="d-block">System</span></button>
           </a>
           <a href="https://acespace.netlify.app/irispage2" target="_blank" class="buttonAPage">
-            <button class="p-2 mt-4 buttonPage">Humans in space</button>
+            <button class="p-2 mt-4 buttonPage">Humans in <span class="d-block">space</span></button>
           </a></div>
       </div>
     </div>
   </div>
-  <hr>
 </section>
+
+<section class="bg-white sect" id="php">
+  <div class="me-4">
+    <h2 class="mt-5 ms-4">PHP</h2>
+    <hr>
+    <div class="d-xl-flex d-block">
+      <div class="ms-4 mt-5 me-2 padding">
+        <p>We had a course called PHP in the first semester of the second year, in the second semester we have a big
+          project using PHP. This is a group project and our team consists out of five people. This projects builds
+          further on the Requirement Analysis project since it is the same subject: the staff management system for a
+          family in England. They wanted an application where they can do many things, such as keeping track
+          of absences, planning meals where the staff can subscribe to, managing tasks and appointments, uploading
+          invoices and files... I provided the images of the pages I made and I also did some small styling changes. In
+          the meal plans page they can see the scheduled meals and add, edit or delete meal plans. The submit invoice
+          page is of course for submitting invoices and the edit profile page is to edit your own profile. Lastly, the
+          declare absence page is for declaring when you will be absent. This project isn't finished yet.
+        </p>
+        <p>I learned how to talk with a client in a professional way, to listen to what they want and how to work in a
+          group. Of course, I also learned more about Laravel 9, which is used in this project.</p>
+
+      </div>
+      <div class="m-4">
+        <div class="accordion w-600" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse"
+                      aria-expanded="true" aria-controls="collapse">
+                Meal plans page
+              </button>
+            </h2>
+            <div id="collapse" class="accordion-collapse collapse show" aria-labelledby="heading"
+                 data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <img src="images/php2.png" width="600">
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false" aria-controls="collapseOne">
+                Submit invoice page
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                 data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <img src="images/php3.png" width="600">
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Edit your profile page
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                 data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <img src="images/php1.png" width="600">
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Declare absence page
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                 data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <img src="images/php4.png" width="600">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="datVis" class="sect">
+
+  <div class="me-4">
+    <h2 class="mt-5 ms-4">Data Visualisation</h2>
+    <hr>
+    <div class="ms-3 mb-5 d-xl-flex d-block">
+      <div class="me-4">
+        <img src="images/dv6.png" class="img-fluid mt-4"
+             width="1918"
+             alt="quote"></div>
+      <div class="mt-5">
+        <p>For the Data Visualisation course we got football data and had to make visualisations. This was an individual
+          project. There were some requirements that had to be met such as a minimum number of sheets and chart types.
+          Part of the project was also that I needed to record a video in which I explained my project. If you click
+          the button you can see the whole project and the visualisations I made.</p>
+        <p>I learned from this project that it is quite hard to come up with good ideas for visualisations. But I also
+          learned that I do like creating visualisations, and it was interesting to see the correlations between
+          information.
+        </p>
+        <div>
+          <a href="https://www.youtube.com/watch?v=4BHHEw_Vurw" target="_blank" class="buttonAPage">
+            <button class="p-2 mt-4 buttonPage">View video</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="../js/plugins.js"></script>
 <script src="../js/main.js"></script>
@@ -256,6 +408,19 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}</script>
+}
+
+var navbar = document.querySelector('.nav-background');
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 0) {
+    navbar.classList.add('nav-background-transparent');
+    navbar.classList.add('nav-background-smaller');
+  } else {
+    navbar.classList.remove('nav-background-transparent');
+    navbar.classList.remove('nav-background-smaller');
+  }
+});
+</script>
 </html>
 
