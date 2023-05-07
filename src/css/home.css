@@ -13,7 +13,7 @@ body {
 
 .navbar {
   font-size: 1.2rem;
-  height: 130px !important;
+  height: 100px !important;
   background-color: #D3EEE1 !important;
   border-bottom: solid black 1px;
 }
@@ -94,6 +94,7 @@ p {
 }
 
 .nav-link:hover {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   background-color: lightgray;
   color: black;
 }
@@ -128,6 +129,7 @@ p {
 }
 
 .buttonLink:hover {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   background-color: #D3EEE1;
   color: black;
 }
@@ -147,6 +149,7 @@ p {
 }
 
 .buttonPage:hover {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   background-color: #D3EEE1;
   color: black;
 }
@@ -159,6 +162,20 @@ p {
 .carousel-item {
   width: 400px;
   height: 100%;
+}
+
+.buttonShadow {
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.7) !important;
+}
+
+.shadow:hover {
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6) !important;
+}
+
+.shadowIcon:hover {
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6) !important;
 }
 
 #myBtn {
